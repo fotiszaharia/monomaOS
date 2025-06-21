@@ -4,7 +4,12 @@ import subprocess
 import time
 import platform
 from main import monoomaOS
+import platform
 def monoma_math():
+    if platform.system() == "Windows":
+        os.system('title monomaOS v0.0.1')
+    else:
+        os.system('echo -n -e "\033]0;monomaOS v0.0.1\007"')
     print("what math do you want to do?")
     print("1. add")
     print("2. subtract")
@@ -16,19 +21,29 @@ def monoma_math():
         num2 = float(input("Enter second number: "))
         if math_choice == "1":
             print(f"Result: {num1 + num2}")
+            time.sleep(2)
+            print("endering back to monomaOS...")
             monoomaOS()
         elif math_choice == "2":
             print(f"Result: {num1 - num2}")
+            time.sleep(2)
+            print("endering back to monomaOS...")
             monoomaOS()
         elif math_choice == "3":
             print(f"Result: {num1 * num2}")
+            time.sleep(2)
+            print("endering back to monomaOS...")
             monoomaOS()
         elif math_choice == "4":
             if num2 != 0:
                 print(f"Result: {num1 / num2}")
+                time.sleep(2)
+                print("endering back to monomaOS...")
                 monoomaOS()
             else:
                 print("Error: Division by zero is not allowed.")
+                time.sleep(2)
+                print("endering back to monomaOS...")
                 monoomaOS()
     else:
         print("Invalid choice. Returning to main menu...")
@@ -36,3 +51,4 @@ def monoma_math():
         print("endering back to monomaOS...")
         time.sleep(2)
         monoomaOS()
+
