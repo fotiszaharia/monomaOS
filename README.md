@@ -1,4 +1,4 @@
-welcome to monomaOS user
+# welcome to monomaOS user
 
 
 this is an python OS-like 
