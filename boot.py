@@ -1,4 +1,4 @@
-from main import monoomaOS
+from main import monomaOS
 print("welcome to monomaOS")
 input("Press enter to continue...")
-monoomaOS()
+monomaOS()
