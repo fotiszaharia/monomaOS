@@ -3,7 +3,7 @@ import sys
 import subprocess
 import time
 import platform
-from main import monomaOS
+from main import monoomaOS
 def monoma_math():
     print("what math do you want to do?")
     print("1. add")
@@ -16,26 +16,26 @@ def monoma_math():
         num2 = float(input("Enter second number: "))
         if math_choice == "1":
             print(f"Result: {num1 + num2}")
-            monomaOS()
+            monoomaOS()
         elif math_choice == "2":
             print(f"Result: {num1 - num2}")
-            monomaOS()
+            monoomaOS()
         elif math_choice == "3":
             print(f"Result: {num1 * num2}")
-            monomaOS()
+            monoomaOS()
         elif math_choice == "4":
             if num2 != 0:
                 print(f"Result: {num1 / num2}")
-                monomaOS()
+                monoomaOS()
             else:
                 print("Error: Division by zero is not allowed.")
-                monomaOS()
+                monoomaOS()
     else:
         print("Invalid choice. Returning to main menu...")
         time.sleep(2)
         print("endering back to monomaOS...")
         time.sleep(2)
-        monomaOS()
+        monoomaOS()
         if os.name == 'nt':  # Windows
             os.system('cls')
         else:
