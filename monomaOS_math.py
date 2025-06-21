@@ -36,7 +36,3 @@ def monoma_math():
         print("endering back to monomaOS...")
         time.sleep(2)
         monoomaOS()
-        if os.name == 'nt':  # Windows
-            os.system('cls')
-        else:
-            os.system('clear')
