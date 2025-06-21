@@ -16,15 +16,20 @@ def monoma_math():
         num2 = float(input("Enter second number: "))
         if math_choice == "1":
             print(f"Result: {num1 + num2}")
+            monomaOS()
         elif math_choice == "2":
             print(f"Result: {num1 - num2}")
+            monomaOS()
         elif math_choice == "3":
             print(f"Result: {num1 * num2}")
+            monomaOS()
         elif math_choice == "4":
             if num2 != 0:
                 print(f"Result: {num1 / num2}")
+                monomaOS()
             else:
                 print("Error: Division by zero is not allowed.")
+                monomaOS()
     else:
         print("Invalid choice. Returning to main menu...")
         time.sleep(2)
